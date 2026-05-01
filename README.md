@@ -152,13 +152,7 @@ claude --plugin-dir ./dev-workflow-plugin
 
 ## 第三方市场收录
 
-本 Skill 已发布到 GitHub 公开仓库，以下平台会通过爬虫自动收录（无需手动提交）：
-
-- **skillsmp.com** — 自动抓取含 `SKILL.md` 的公开仓库（需 ≥2 GitHub Stars）🔗 https://skillsmp.com
-- **claudate.com** — AI Skills Marketplace，自动同步 GitHub 公开仓库 🔗 https://claudate.com
-
-> ⚠️ **注意**：skillsmp.com 要求仓库至少有 **2 个 GitHub Star** 才会被收录。欢迎为本仓库 Star 以支持收录！
-
+本 Skill 已发布到 GitHub 公开仓库
 ---
 
 ## 作者与许可
