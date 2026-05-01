@@ -1,0 +1,14 @@
+{
+  "name": "dev-workflow",
+  "description": "7-phase full-stack development workflow with TDD, systematic debugging, code review, and documentation generation. Supports C/C++/Python/TypeScript/Go/Rust/Java and embedded STM32 development.",
+  "version": "1.0.0",
+  "author": {
+    "name": "子都子充"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ziduzichong/dev-workflow",
+  "repository": "https://github.com/ziduzichong/dev-workflow",
+  "keywords": ["workflow", "tdd", "code-review", "debugging", "documentation", "full-stack", "embedded", "superpowers"],
+  "category": "productivity",
+  "skills": ["./skills/dev-workflow"]
+}
