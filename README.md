@@ -1,6 +1,15 @@
 # dev-workflow — Claude Code 全流程开发编排 Skill
 
 > 一个覆盖「规划 → 编码 → 调试 → 审查 → 优化 → 文档」7 阶段的完整开发工作流 Skill，专为 Claude Code / WorkBuddy 设计。
+> GitHub：https://github.com/ziduzichong/dev-workflow
+
+## 快速安装
+
+```bash
+git clone https://github.com/ziduzichong/dev-workflow.git && mkdir -p ~/.workbuddy/skills/ && cp -r dev-workflow/skills/dev-workflow ~/.workbuddy/skills/
+```
+
+**更多安装方式**（ZIP下载 / curl直接下载 / 依赖Skill安装）详见 → [INSTALL.md](INSTALL.md)
 
 ## 一句话介绍
 
@@ -40,29 +49,13 @@ dev-workflow 将 AI 辅助开发从「单轮对话」升级为「多阶段可验
 
 ## 使用方法
 
-### 安装
+### 安装与卸载
 
-**方式一：从 GitHub 安装（推荐）**
+详见 → [INSTALL.md](INSTALL.md)
 
-```bash
-# 添加 marketplace（首次）
-claude plugin marketplace add ziduzichong/ziduzichong-tools
-
-# 安装插件
-claude plugin install dev-workflow@ziduzichong-tools
-
-# 或在项目目录中本地加载（开发调试用）
-claude --plugin-dir ./dev-workflow-plugin
-```
-
-**方式二：安装依赖 Skill**
-
-本 Skill 依赖以下 Superpowers Skill（已安装可跳过）：
-
-```bash
-# 安装 Superpowers（如未安装）
-# 参考：https://github.com/anthropics/superpowers
-```
+- **安装方式：** Git Clone（推荐）/ 下载 ZIP / curl 直接下载
+- **卸载方式：** Bash 或 PowerShell 一行命令删除 skill 目录
+- **依赖 Skill：** Superpowers（brainstorming、writing-plans、test-driven-development 等）
 
 ### 快速开始
 
@@ -169,3 +162,14 @@ claude --plugin-dir ./dev-workflow-plugin
 | 版本 | 日期 | 核心变化 |
 |------|------|---------|
 | v1.0.0 | 2026-05 | 首次发布，7阶段完整流程，L2/L3分层架构 |
+
+---
+
+## 卸载
+
+```bash
+# 全局卸载
+rm -rf ~/.workbuddy/skills/dev-workflow/
+
+# 详细卸载步骤（项目级/Claude Code 兼容路径）详见 INSTALL.md
+```
