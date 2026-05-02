@@ -40,7 +40,7 @@ dev-workflow 将 AI 辅助开发从「单轮对话」升级为「多阶段可验
 |------|------|---------|
 | **强依赖 Superpowers Skill 生态** | 需要同时安装 `superpowers:brainstorming`、`writing-plans`、`test-driven-development` 等 8 个外部 skill，缺失 ≥2 个核心 skill 会中止 | README 中提供一键安装命令，或手动补装缺失 skill |
 | **Sub-Agent 编排依赖平台能力** | 阶段2（架构审查）和阶段3（并行微任务）依赖 Agent/Sub-Agent 工具，在 Cursor/Windsurf/OpenCode 等平台无法使用 | 可降级运行（无 sub-agent 时主 agent 自行审查），或按平台适配指南改造 |
-| **SKILL.md 对 Claude Code 耦合较高** | 使用了 Claude Code 专有工具名（Read/Write/Bash/Glob/Grep/Agent），其他平台需适配 | 参考 `adaptation-guide.md`（待写）或联系作者获取适配版 |
+| **SKILL.md 对 Claude Code 耦合较高** | 使用了 Claude Code 专有工具名（Read/Write/Bash/Glob/Grep/Agent），其他平台需适配 | 联系作者获取适配版 |
 | **无内置 Web UI** | 所有交互通过命令行，进度和报告以 Markdown 文件输出 | 配合 VS Code 侧边栏或 Claude Code 终端使用，输出文件可用任何 Markdown 编辑器查看 |
 | **嵌入式项目烧录需手动配置** | ST-Link/OpenOCD 烧录命令需用户自行确认路径 | 阶段3 构建验证步骤中会提示用户确认，不会自动执行烧录 |
 | **Context 管理需人工介入** | 超大项目（>10个阶段轮次）可能触达 context 上限，需开启新会话恢复 | 阶段产出自动写入文件，支持从任意阶段恢复，README 中有恢复指引 |
